@@ -1,4 +1,5 @@
-html,body {
+html,
+body {
   height: 100vh;
   width: 100%;
   background-image: url("https://source.unsplash.com/collection/142324/1600x900");
@@ -9,77 +10,69 @@ html,body {
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
-  display:table;
+  display: table;
   overflow: hidden;
 }
 
-/* font css */
 p {
   font-size: 1.8em;
 }
 
-
-.contain{
-  display:table-cell;
+.contain {
+  display: table-cell;
   vertical-align: middle;
   text-align: center;
-  padding:3em;
+  padding: 3em;
 }
 
-/* quote css */
-#quote{
-  color:white;
-  font-family : Cardo;
+#quote {
+  color: white;
+  font-family: Cardo;
   position: relative;
   text-shadow: 1px 1px 20px rgba(black, 0.3);
 }
 
-/* source css */
-#writer{
+#writer {
   opacity: 0.8;
   font-size: 1em;
-  padding-right:2em;
+  padding-right: 2em;
   text-align: right;
   text-shadow: 1px 1px 5px rgba(black, 0.3);
-  color:white;
-  font-family : Cardo;
+  color: white;
+  font-family: Cardo;
   position: relative;
   -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-/* for the after stage of the source */
 .fade {
-  opacity:0 !important;
+  opacity: 0 !important;
 }
 
-/* for the after stage of the quote.*/
 .executed {
-  opacity:1;
+  opacity: 1;
   right: 0;
   -webkit-transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out;
-    -o-transition: all 2s ease-in-out;
-    transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
-/* for the before stage of the quote; should slide right when presented and left when removed.  */
 .reset {
-  opacity:0;
-  right:600;
+  opacity: 0;
+  right: 600;
   -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-/* for the instructions at the bottom */
 .bottom {
   bottom: 5;
   position: absolute;
-  color:#fff;
+  color: #fff;
   font-family: Cardo;
   letter-spacing: 1px;
   font-size: 0.6em;
