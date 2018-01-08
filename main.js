@@ -6,7 +6,7 @@ $(window).keypress(function (e) {
     setTimeout(function () {
       $.ajax({
         crossOrigin: true,
-        url: "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback",
+        url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback",
         dataType: "jsonp"
       });
     }, 1000);
@@ -32,5 +32,5 @@ $('.random-image').hide();
 
 $('.random-image').css({
   // serves a random image from this collection on Unsplash.com
-  'background-image': 'url(http://source.unsplash.com/collection/142324/1600x900)'
+  'background-image': 'url(https://source.unsplash.com/collection/142324/1600x900)'
 }).fadeIn(1500);
